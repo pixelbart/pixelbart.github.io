@@ -61,18 +61,28 @@
     <script src="{{ site.baseurl }}/prettify/prettify.js"></script>  
     <script type="text/javascript">
       $(document).ready(function() {        
-        if($("#pbsc").length !== 0) {                 
-          $('#pbsc').text("Einen Moment bitte...");
+        if($("#pbsc").length !== 0) {  
+          
+          var elem = document.getElementById("bar");
+          var width = 1;
+          var id = setInterval(frame, 10);
+          
+          function frame() {
+              if (width >= 100) {
+                  clearInterval(id);
+              } else {
+                  width++;
+                  elem.style.width = width + '%';
+              }
+          }
+          
           $('#pbsc').slideDown(1000, loadContent);
+          
           function loadContent() {
             $('#pbsc').load("https://status.pixelbart.de");
           }
+          
         }
-      });
-      $(function() {
-        $("pre").each(function(){
-          $(this).addClass("prettyprint lang-php");
-        })
       });
     </script>
     
