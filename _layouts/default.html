@@ -65,7 +65,7 @@
           var id = setInterval(frame, 10);
           
           $('#progress').hide();
-          $('#progress').show(1000, frame);
+          $('#progress').show(frame);
           
           function frame() {
               if (width >= 100) {
@@ -80,8 +80,6 @@
           
           function loadContent() {
             $('#pbsc').load("https://status.pixelbart.de");
-            var progress = $('#progress').hide();
-            setInterval( progress, 1000);
           }
           
         }
