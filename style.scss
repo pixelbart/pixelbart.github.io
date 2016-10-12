@@ -53,9 +53,6 @@ h1 {
 
 h2 {
   font-size: 24px;
-  a {
-    color: inherit;
-  }
 }
 
 h3 {
@@ -113,27 +110,6 @@ img {
   max-width: 100%;
 }
 
-pre, code {
-  overflow: auto;
-  font-size: 13px;
-  font-family: monospace;
-}
-
-pre {
-  border: 1px solid rgb(51, 51, 51);
-}
-
-code.highlighter-rouge {
-  color: rgb(199, 37, 78);
-  background: rgb(249, 242, 244);
-  padding: 2px 4px;
-  font-size: 12.6px;
-  line-height: 18px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -166,7 +142,7 @@ code.highlighter-rouge {
     clear: both;
 }
 
-/*********************/ 
+/*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
 
@@ -307,33 +283,7 @@ footer {
   text-align: center;
 }
 
-//
-// Pixelbart Custom
-//
-
-.footer nav {
-  text-align: center;
-  display: block !important;
-  float: none;
-  text-align: center;  
-  span {
-    display: inline;
-  }
-  a {
-    display: inline;
-  }
-}
-
-@media all and (max-width: 700px) {
-  .footer nav {
-    span {
-      display: inline;
-    }
-    a {
-	    text-align: center !important;
-      display: block !important;
-    }
-  }
-}
-
+// Settled on moving the import of syntax highlighting to the bottom of the CSS
+// ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+@import "highlights";
 @import "svg-icons";
