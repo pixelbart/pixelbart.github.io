@@ -83,7 +83,8 @@
           
           function loadContent() {
             $('#pbsc').load("https://status.pixelbart.de");
-            $('#progress').hide();
+            var progress = $('#progress').hide();
+            setInterval( progress, 1000);
           }
           
         }
