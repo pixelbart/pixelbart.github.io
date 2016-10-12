@@ -61,6 +61,7 @@
         if($("#load-wrapper").length !== 0) {
           
           $('#load-wrapper').hide();
+          $('#load-wrapper .load-content').load("https://status.pixelbart.de");
           
           var progressbar = $('#progressbar'),
           max = progressbar.attr('max'),
@@ -75,9 +76,6 @@
               clearInterval(animate);
               $('.progress-bar-wrapper').hide(); 
               $('#load-wrapper').show();
-            }
-            if (value == 75) {
-              $('#load-wrapper').load("https://status.pixelbart.de");              
             }
           }
           var animate = setInterval(function() {
