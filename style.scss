@@ -314,23 +314,9 @@ footer {
   }
 }
 
-#progress {
-  position: relative;
-  width: 100%;
-  height: 30px;
-  background-color: $lightGray;
-  #bar {
-    position: absolute;
-    width: 1%;
-    height: 100%;
-    background-color: $blue;
-  }
-  #label {
-    text-align: left;
-    line-height: 30px;
-    margin-left: 5px;
-    color: $white;
-  }
+progress[value] {
+width: 250px;
+height: 20px;
 }
 
 @media all and (max-width: 700px) {
