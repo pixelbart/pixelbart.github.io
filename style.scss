@@ -315,10 +315,17 @@ footer {
 }
 
 progress[value] {
-width: 250px;
-height: 20px;
--webkit-appearance: none;
-appearance: none;
+  width: 250px;
+  height: 20px;
+  -webkit-appearance: none;  
+  -moz-appearance: none;
+  appearance: none;
+  ::-webkit-progress-bar {
+  }
+  ::-webkit-progress-value {
+  }
+  ::-moz-progress-bar {
+  }
 }
 
 @media all and (max-width: 700px) {
