@@ -68,7 +68,7 @@
           
           $('#pbsc').show(1000, loadContent);
           
-          $(loadContent).ready(frame);
+          $('#pbsc').load(function(){ alert('loaded!'); });
           
           function loadContent() { 
             $('#pbsc').load("https://status.pixelbart.de");          
