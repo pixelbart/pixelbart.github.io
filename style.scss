@@ -113,6 +113,17 @@ img {
   max-width: 100%;
 }
 
+code.highlighter-rouge {
+  color: rgb(199, 37, 78);
+  background: rgb(249, 242, 244);
+  padding: 2px 4px;
+  font-size: 12.6px;
+  line-height: 18px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
