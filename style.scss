@@ -335,6 +335,12 @@ progress[value]::-webkit-progress-bar {
   -webkit-border-radius: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
+progress[value]::-webkit-progress-value {
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  background-color: $blue;
+}
 progress[value]::-moz-progress-bar {
   background-color: $blue;
   color: $blue; 
