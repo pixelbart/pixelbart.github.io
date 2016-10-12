@@ -62,9 +62,15 @@
           
           $('#pbsc').html('<div id="progress"><div id="bar"></div></div>');
           
-          var elem = document.getElementById('bar');
-          var width = 1;
-          var id = setInterval(frame, 10);  
+          
+          $('#pbsc').show(1000, loadContent);
+          
+          function loadContent() {
+            var elem = document.getElementById('bar');
+            var width = 1;
+            var id = setInterval(frame, 5);  
+            $('#pbsc').load("https://status.pixelbart.de");          
+          }
           
           function frame() {
               if (width >= 100) {
@@ -73,14 +79,7 @@
                   width++;
                   elem.style.width = width + '%';
               }
-          }
-          
-          $('#pbsc').show(1000, loadContent);
-          
-          function loadContent() {
-            $('#pbsc').load("https://status.pixelbart.de");          
-          }
-          
+          }          
         }
       });
     </script>
