@@ -59,9 +59,12 @@
     <script type="text/javascript">
       $(document).ready(function() {        
         if($("#pbsc").length !== 0) {  
-                    
-          var elem = document.getElementById("bar");
+          
+          $('#pbsc').html('<div id="progress"><div id="bar"></div></div>');
+          
+          var elem = $('#bar');
           var width = 1;
+          var id = setInterval(frame, 10);  
           
           function frame() {
               if (width >= 100) {
@@ -75,9 +78,7 @@
           $('#pbsc').show(1000, loadContent);
           
           function loadContent() {
-            $('#pbsc').load("https://status.pixelbart.de");
-            var id = setInterval(frame, 10);
-            
+            $('#pbsc').load("https://status.pixelbart.de");          
           }
           
         }
