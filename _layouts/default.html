@@ -1,18 +1,82 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+    {% include meta.html %}
 
-      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/prettify/prettify.css">  
+    <link rel="stylesheet" href="{{ site.baseurl }}/prettify/custom-theme.css">  
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css">     
+    
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-      <div class="entry">
-        {{ post.excerpt }}
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body onload="prettyPrint()">
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" alt="{{ site.name }}" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+            <p class="site-description">{{ site.description }}</p>
+          </div>
+
+          <nav>
+            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/about">Über</a>
+            <a href="{{ site.baseurl }}/status">Status</a>
+            <a href="{{ site.baseurl }}/links">Links</a>
+          </nav>
+        </header>
       </div>
+    </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Weiterlesen</a>
-    </article>
-  {% endfor %}
-</div>
+    <div id="main" role="main" class="container">
+      {{ content }}
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+          <nav>
+            <span class="copy">&copy; 2016 - {{ site.name }}</span>
+            <a href="{{ site.baseurl }}/imprint">Impressum</a>
+            <a href="{{ site.baseurl }}/privacy">Datenschutzerklärung</a>
+            <a href="{{ site.baseurl }}/sitemap">Sitemap</a>
+          </nav>
+        </footer>
+      </div>
+    </div>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
+    <script src="{{ site.baseurl }}/prettify/prettify.js"></script>  
+    <script type="text/javascript">
+      $(document).ready(function() {        
+        if($("#pbsc").length !== 0) {                 
+          $('#pbsc').text("Einen Moment bitte...");
+          $('#pbsc').slideDown(1000, loadContent);
+          function loadContent() {
+            $('#pbsc').load("https://status.pixelbart.de");
+          }
+        }
+      });
+      $(function() {
+        $("pre").each(function(){
+          $(this).addClass("prettyprint lang-php");
+        })
+      });
+    </script>
+    
+    {% include analytics.html %}
+  </body>
+</html>
