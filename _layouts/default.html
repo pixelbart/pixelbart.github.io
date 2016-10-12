@@ -57,9 +57,26 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
     <script type="text/javascript">
-      $(document).ready(function() {        
-        if($("#load-wrapper").length !== 0) {  
-          $('#load-wrapper').load("https://status.pixelbart.de");        
+      $(window).load(function() {        
+        if($("#load-wrapper").length !== 0) {      
+          var progressbar = $('#progressbar'),
+          max = progressbar.attr('max'),
+          time = (1000/max)*10, 
+          value = progressbar.val();
+
+          var loading = function() {
+            value += 1;
+            addValue = progressbar.val(value);
+            $('.progress-value').html(value + '%');
+            if (value == max) {
+              clearInterval(animate);
+            }
+          }
+
+          if (value == 100) {
+            progressbar.hide();
+            $('#load-wrapper').load("https://status.pixelbart.de"); 
+          }
         }
       });
     </script>
