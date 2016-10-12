@@ -70,8 +70,10 @@
             $('.progress-value').html(value + '%');
             if (value == max) {
               clearInterval(animate);
-              $('.progress-bar-wrapper').hide();
-              $('#load-wrapper').load("https://status.pixelbart.de"); 
+              $('.progress-bar-wrapper').hide(); 
+            }
+            if (value == 80) {
+              $('#load-wrapper').load("https://status.pixelbart.de");
             }
           }
           var animate = setInterval(function() {
