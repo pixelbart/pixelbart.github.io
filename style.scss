@@ -317,6 +317,8 @@ footer {
 progress[value] {
 width: 250px;
 height: 20px;
+-webkit-appearance: none;
+appearance: none;
 }
 
 @media all and (max-width: 700px) {
