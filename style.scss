@@ -315,28 +315,32 @@ footer {
 }
 
 progress[value] {
+  background-color: $lightGray;
   width: 250px;
   height: 20px;
   -webkit-appearance: none;  
   -moz-appearance: none;
   appearance: none;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
   border: none;
   color: $blue; 
 }
 progress[value]::-webkit-progress-bar {
-  background-color: #eee;
+  background-color: $lightGray;
   color: $blue; 
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 progress[value]::-moz-progress-bar {
-  background-color: #eee;
+  background-color: $blue;
   color: $blue; 
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+  border-radius: 0px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
 
