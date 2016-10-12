@@ -74,6 +74,9 @@
               $('#load-wrapper').load("https://status.pixelbart.de"); 
             }
           }
+          var animate = setInterval(function() {
+            loading();
+           }, time);
         }
       });
     </script>
