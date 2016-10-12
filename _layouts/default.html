@@ -16,7 +16,7 @@
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
-  <body onload="prettyPrint()">
+  <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -57,7 +57,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> 
     <script type="text/javascript">
-      $(window).load(function() {        
+      $(document).ready(function() {        
         if($("#load-wrapper").length !== 0) {      
           var progressbar = $('#progressbar'),
           max = progressbar.attr('max'),
@@ -74,7 +74,7 @@
           }
 
           if (value == 100) {
-            progressbar.hide();
+            $('.progress-bar-wrapper').hide();
             $('#load-wrapper').load("https://status.pixelbart.de"); 
           }
         }
