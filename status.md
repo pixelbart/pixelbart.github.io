@@ -11,4 +11,4 @@ Hier findest Du Informationen über Dienste die ich bereitstelle. Die Statusanze
   <span class="progress-value">0%</span>
 </div>
 
-<div id="load-wrapper"></div>
+<div id="load-wrapper"><div class="load-content"></div></div>
