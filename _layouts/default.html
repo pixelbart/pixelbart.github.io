@@ -70,12 +70,9 @@
             $('.progress-value').html(value + '%');
             if (value == max) {
               clearInterval(animate);
+              $('.progress-bar-wrapper').hide();
+              $('#load-wrapper').load("https://status.pixelbart.de"); 
             }
-          }
-
-          if (value == 100) {
-            $('.progress-bar-wrapper').hide();
-            $('#load-wrapper').load("https://status.pixelbart.de"); 
           }
         }
       });
