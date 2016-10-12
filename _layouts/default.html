@@ -64,7 +64,11 @@
           
           var elem = document.getElementById('bar');
           var width = 1;
-          var id = setInterval(frame, 27);      
+          var id = setInterval(frame, 27);    
+          
+          $(window).load(function() {
+            
+          });
                     
           (function loadContent() {
             $('#pbsc').load("https://status.pixelbart.de"); 
