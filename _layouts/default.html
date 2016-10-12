@@ -61,7 +61,7 @@
         if($("#load-wrapper").length !== 0) {
           
           $('#load-wrapper').hide();
-          $('.load-content').load("https://status.pixelbart.de");
+          $('#load-wrapper div').load("https://status.pixelbart.de");
           
           var progressbar = $('#progressbar'),
           max = progressbar.attr('max'),
