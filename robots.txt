@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /links/
+Disallow: /infos/
+
+Sitemap: http://pixelbart.github.io/sitemap
