@@ -283,6 +283,35 @@ footer {
   text-align: center;
 }
 
+//
+// Pixelbart Custom
+//
+
+.footer nav {
+  text-align: center;
+  display: block !important;
+  float: none;
+  text-align: center;  
+  span {
+    display: inline;
+  }
+  a {
+    display: inline;
+  }
+}
+
+@media all and (max-width: 700px) {
+  .footer nav {
+    span {
+      display: inline;
+    }
+    a {
+	    text-align: center !important;
+      display: block !important;
+    }
+  }
+}
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
