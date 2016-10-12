@@ -18,7 +18,7 @@ html {
 }
 
 body {
-	background: $white;
+  background: $white;
   font: 18px/1.4 $helvetica;
   color: $darkGray;
 }
@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 15px;
   padding: 0;
 
-  @include mobile {
+  @include mobile { 
     line-height: 1.4;
   }
 }
@@ -318,18 +318,18 @@ footer {
   position: relative;
   width: 100%;
   height: 30px;
-  background-color: #ddd;
+  background-color: $lightGray;
   #bar {
     position: absolute;
     width: 1%;
     height: 100%;
-    background-color: #4183C4;
+    background-color: $blue;
   }
   #label {
     text-align: left;
     line-height: 30px;
     margin-left: 15px;
-    color: white;
+    color: $white;
   }
 }
 
