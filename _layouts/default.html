@@ -67,6 +67,9 @@
           var width = 1;
           var id = setInterval(frame, 10);
           
+          $('#progress').hide();
+          $('#progress').show(1000, frame);
+          
           function frame() {
               if (width >= 100) {
                   clearInterval(id);
