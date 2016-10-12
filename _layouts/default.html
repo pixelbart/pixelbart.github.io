@@ -59,32 +59,7 @@
     <script type="text/javascript">
       $(document).ready(function() {        
         if($("#pbsc").length !== 0) {  
-          
-          $('#pbsc').html('<div id="progress"><div id="bar"><div id="label">10%</div></div></div>');
-          
-          var elem = document.getElementById('bar');
-          var width = 1;
-          var id = setInterval(frame, 27);    
-          
-          $(window).load(function() {
-            
-          });
-                    
-          (function loadContent() {
-            $('#pbsc').load("https://status.pixelbart.de"); 
-            $('#pbsc').load(function(){ alert('loaded!'); });
-            setTimeout(loadContent, 1000);
-          })();
-          
-          function frame() {
-              if (width >= 100) {
-                  clearInterval(id);
-              } else {
-                  width++;
-                  elem.style.width = width + '%';
-                  document.getElementById("label").innerHTML = width * 1 + '%';
-              }
-          }          
+          $('#pbsc').load("https://status.pixelbart.de");        
         }
       });
     </script>
