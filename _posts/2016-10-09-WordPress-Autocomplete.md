@@ -16,6 +16,7 @@ zu erstellen, um dort eigene Header und Queries definieren zu können.
 Ein Beispiel Template könnte so aussehen:
 
 ```php
+<?php
 /** Template Name: Blog JSON **/ 
 header( 'Content-type: application/json' );
 
