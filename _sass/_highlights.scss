@@ -20,7 +20,12 @@
   white-space: pre;
   overflow-x: auto;
   word-break: inherit;
-  word-wrap: inherit; 
+  word-wrap: inherit;
+  padding: 5px;
+}
+
+.highlight .gutter {
+  padding: 5px;
 }
 
 .highlight .hll { background-color: #ffffcc }
