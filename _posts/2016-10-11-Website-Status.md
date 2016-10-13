@@ -10,6 +10,7 @@ Dabei wird die Webseite kurz "inkludiert" und die Headerinformationen ausgelesen
 Wie das Script im Groben aussehen könnte, siehst du hier:
 
 ```php
+<?php
 header('Access-Control-Allow-Origin: *');  
 
 /**
