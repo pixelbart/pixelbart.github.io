@@ -10,21 +10,25 @@
   font-size: 13px;
   line-height: 23px;
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-}
-
-.highlight .code {
-  white-space: pre;
-  word-break: inherit;
-  word-wrap: inherit;
-  padding: 5px;
-}
-
-.highlight .gutter {
-  color: #aaa;
-  padding: 5px;
-  border-right: solid 1px #ddd;
-  height: 100%;
-  overflow: hidden;
+ .code {
+    white-space: pre;
+    word-break: inherit;
+    word-wrap: inherit;
+    padding: 5px;
+  }
+  .gutter {
+    color: #aaa;
+    padding: 5px;
+    border-right: solid 1px #ddd;
+    height: 100%;
+    overflow: hidden;
+  }
+  ::selection {
+    background: #ffb7b7;
+  }
+  ::-moz-selection {
+    background: #ffb7b7;
+  }
 }
 
 .highlight .hll { background-color: #ffffcc }
