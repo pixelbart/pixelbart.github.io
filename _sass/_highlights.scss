@@ -10,7 +10,10 @@
   word-wrap: inherit;
   position: relative;
   font-size: 13px;
-  font-family: monospace;
+  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0,0,0,0.1);
 }
 
 .highlight .code {
