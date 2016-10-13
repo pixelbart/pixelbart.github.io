@@ -1,24 +1,15 @@
 .highlight {
-  border: solid 1px #ddd;
-  background: #fff;
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  line-height: 23px;
-  margin-bottom: 30px;
-  white-space: pre;
-  word-break: inherit;
-  word-wrap: inherit;
-  position: relative;
-  font-size: 13px;
-  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  background-color: #fff;
+  padding: 7px 7px 7px 10px;
+  border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
   -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
   box-shadow: 3px 3px rgba(0,0,0,0.1);
-}
-
-.highlight table tbody {
-  overflow-x: scroll;
+  margin: 20px 0 20px 0;
+  overflow: scroll;
+  font-size: 13px;
+  line-height: 23px;
+  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
 }
 
 .highlight .code {
