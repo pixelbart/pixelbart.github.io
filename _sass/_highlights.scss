@@ -2,6 +2,7 @@
   border: solid 1px #ddd;
   background: #fff;
   padding: 0;
+  overflow-x: visible; 
   line-height: 23px;
   margin-bottom: 30px;
   white-space: pre;
@@ -16,7 +17,7 @@
 }
 
 .highlight .code {
-  overflow-x: auto; 
+  overflow-x: visible; 
   white-space: pre;
   word-break: inherit;
   word-wrap: inherit;
