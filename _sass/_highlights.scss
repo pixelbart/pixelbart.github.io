@@ -9,9 +9,6 @@
   word-break: inherit;
   word-wrap: inherit;
   position: relative;
-}
-
-.highlight {
   font-size: 13px;
   font-family: monospace;
 }
@@ -28,6 +25,7 @@
   padding: 5px;
   border-right: solid 1px #ddd;
   height: 100%;
+  overflow: hidden;
 }
 
 .highlight .hll { background-color: #ffffcc }
