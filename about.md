@@ -6,7 +6,7 @@ permalink: /about/
 
 Ich bin Kevin Pliester ein recht junger, verheirateter und bärtiger Web-Entwickler. Für meine Kunden erstelle ich WordPress Webseiten und kleine Web-Anwendungen wie Verwaltungssysteme für Vereine, oder Content-Management-Systeme für Blogs und Ähnliches.
 
-Shop-Umsetzungen in WordPress erledige ich immer mit WooCommerce. Alles andere (auch Plugins) entwickle ich meist selbst, damit es zu 100% für den Kunden passt. Designer bin ich leider nicht - meine Seiten werden auf das "Wichtigste" beschränkt und sind funktional.
+Shop-Umsetzungen in WordPress erledige ich immer mit WooCommerce. Alles andere (auch Plugins) entwickle ich meist selbst, damit es zu 100% für den Kunden passt. **Web-Designer bin ich nicht** - meine Seiten werden auf das "Wichtigste" beschränkt und sind funktional. Suchst du einen fähigen Web-Designer kannst du gerne bei [Julian Lang](http://jl-webservice.de) vorbeischauen.
 
 Des Weiteren bin ich Co-Founder von [Getnudged](https://getnudged.de) und entwickle dort das Kundenbackend, die gesamte API und andere Dinge - die noch nicht online sind.
 
