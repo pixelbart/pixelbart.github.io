@@ -24,6 +24,7 @@ Außerdem habe ich für das Team ein Plugin für Redaktions- und Beitragsstatist
 ### Dies & Das (private)
 
 [Getnudged](https://getnudged.de) + [API](http://docs.getnudged.apiary.io)
+[CrimeBlood](http://crimeblood.de)
 
 ## Noch etwas über mich
 
